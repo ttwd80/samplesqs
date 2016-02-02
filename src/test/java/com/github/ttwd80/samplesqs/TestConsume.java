@@ -82,7 +82,7 @@ public class TestConsume {
 	public void test5() {
 		System.out.println("Testing with max message 5");
 		ReceiveMessageRequest receiveMessageRequest = new ReceiveMessageRequest(queueUrl);
-		receiveMessageRequest.setMaxNumberOfMessages(10);
+		receiveMessageRequest.setMaxNumberOfMessages(5);
 		ReceiveMessageResult result = null;
 		int receiveMessageCallCount = 0;
 		do {
